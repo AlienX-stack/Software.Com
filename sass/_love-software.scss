@@ -1,0 +1,132 @@
+.love__software {
+  width: 100%;
+  height: 115rem;
+  background-color: $color-light-grey-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--tag {
+    position: relative;
+    top: 12rem;
+    background-color: rgb(224, 240, 239);
+    width: 13rem;
+    height: 3rem;
+    // margin: 0 auto;
+
+    &-txt {
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-primary;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-align: center;
+      height: 3rem;
+      width: 13rem;
+    }
+  }
+
+  &--mainheading {
+    position: relative;
+    top: 15rem;
+    &-txt {
+      font-size: 4rem;
+      font-weight: 600;
+      color: $color-dark-grey-1;
+    }
+  }
+
+  &--subheading {
+    position: relative;
+    top: 18rem;
+    display: flex;
+    justify-content: center;
+    word-spacing: 2px;
+    color: $color-light-grey-2;
+
+    &-txt {
+      font-size: 2.2rem;
+      width: 51%;
+      line-height: 3rem;
+    }
+  }
+
+  &--cards {
+    position: relative;
+    top: 26rem;
+    // background-color: aqua;
+    width: 80%;
+    height: 55rem;
+    display: flex;
+    justify-content: space-between;
+
+    &-card {
+      background-color: $color-white;
+      width: 31%;
+      height: 100%;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem 3rem 3rem 3rem;
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+      transition: all 0.4s;
+
+      &-img {
+        width: 60%;
+        // background-color: aqua;
+      }
+
+      &-1-img {
+        width: 80%;
+      }
+
+      &-2-img {
+        width: 70%;
+      }
+
+      &--txt {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $color-dark-grey-1;
+        padding: 4rem 3rem 2rem 3rem;
+        text-align: center;
+      }
+
+      &--subtxt {
+        padding: 0rem 1.5rem 2rem 1.5rem;
+        font-size: 1.67rem;
+        font-weight: 500;
+        color: $color-light-grey-2;
+        text-align: center;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  &-btn {
+    position: relative;
+    top: 32rem;
+    font-size: 1.8rem;
+    color: $color-white;
+    background-color: $color-primary;
+    padding: 1.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  &-btn:hover,
+  &--cards-card:hover {
+    transform: translateY(-0.3rem);
+  }
+
+  &-btn:hover::after {
+    /* Scale increases the size of the element */
+    transform: scaleX(2) scaleY(2);
+    box-shadow: 0 3rem -3rem rgba(0, 0, 0, 0.5);
+  }
+}
